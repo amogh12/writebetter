@@ -1,0 +1,15 @@
+{
+  "hotkey": "<ctrl>+<shift>+<space>",
+  "num_variants": 3,
+  "key_sleep_ms": 150,
+  "default_instructions": "Keep my meaning. Fix grammar. Natural, not over-formal.",
+  "providers": [
+    {"id": "openai",     "type": "openai_compat", "base_url": "https://api.openai.com/v1",                               "model": "gpt-4o-mini",                 "key_ref": "openai"},
+    {"id": "anthropic",  "type": "anthropic",     "base_url": "https://api.anthropic.com",                                "model": "claude-sonnet-4-5",           "key_ref": "anthropic"},
+    {"id": "google",     "type": "openai_compat", "base_url": "https://generativelanguage.googleapis.com/v1beta/openai", "model": "gemini-2.5-flash",            "key_ref": "google"},
+    {"id": "openrouter", "type": "openai_compat", "base_url": "https://openrouter.ai/api/v1",                            "model": "anthropic/claude-sonnet-4.5", "key_ref": "openrouter"},
+    {"id": "nvidia_nim", "type": "openai_compat", "base_url": "https://integrate.api.nvidia.com/v1",                     "model": "meta/llama-3.3-70b-instruct", "key_ref": "nvidia"},
+    {"id": "local",      "type": "openai_compat", "base_url": "http://localhost:11434/v1",                               "model": "llama3.1:8b",                 "key_ref": "ollama"}
+  ],
+  "active_provider": "openai"
+}
